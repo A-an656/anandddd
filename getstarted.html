@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulMateSolapur</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Parallax Effect Styles */
+        .parallax {
+            background-image: url('./images/car.jpg'); /* Replace with your image URL */
+            height: 100vh; /* Full page height */
+            background-attachment: fixed; /* Fix the background image */
+            background-position: center center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            background-size: cover; /* Cover the entire section */
+            display: flex;
+            align-items: center; /* Center text vertically */
+            justify-content: center; /* Center text horizontally */
+            color: #f3f0f0; /* Black text color */
+            text-align: center; /* Center text alignment */
+            margin: 20px; /* Margin around the section */
+        }
+
+        .parallax h1 {
+            font-size: 4rem; /* Adjust the font size */
+            font-weight: bold; /* Make the text bold */
+        }
+
+        .parallax p {
+            font-size: 1.5rem; /* Adjust the font size */
+            margin-bottom: 30px; /* Space below the paragraph */
+        }
+
+        .btn-primary {
+            font-size: 1.25rem; /* Adjust the button size */
+            padding: 10px 20px;
+        }
+
+        /* Modal Customization */
+        .modal-content {
+            background-color: #333; /* Dark background for the form */
+            color: white; /* White text color */
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #444;
+        }
+
+        .form-group label {
+            color: #ccc; /* Light grey labels */
+        }
+
+        .modal-body {
+            background-color: #222; /* Darker background for modal body */
+            padding: 30px;
+        }
+
+        .btn-google {
+            background-color: #0e0f01;
+            color: white;
+        }
+
+        .btn-google:hover {
+            background-color: #c33d2d;
+        }
+
+        .btn-phone {
+            background-color: #34a853;
+            color: white;
+        }
+
+        .btn-phone:hover {
+            background-color: #2d9149;
+        }
+        .mt-3{
+            color: white;
+        }
+
+        body {
+            background-color: #000; /* Full page black background */
+        }
+        .btn btn-phone btn-bloc{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Parallax Hero Section -->
+<div class="parallax">
+    <div>
+        <h1>Find Your Perfect Match</h1>
+        <p>Join SoulMateSolapur and connect with singles in your city.</p>
+        <!-- Get Started Button that triggers modal -->
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">Get Started</a>
+    </div>
+</div>
+
+<!-- Modal for Sign Up -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="signupModalLabel">Get Started with SoulMateSolapur</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                </form>
+
+                <!-- Additional Login Options -->
+                <div class="text-center mt-4">
+                    <a href="#" class="text-light">Forgotten Password?</a>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-phone btn-block">Log in with Phone Number</button>
+                    <button class="btn btn-google btn-block">Log in with Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

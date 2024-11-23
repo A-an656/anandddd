@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulMateSolapur</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Find your perfect match with SoulMateSolapur, the leading dating app for singles in Solapur.">
+    <meta name="keywords" content="dating, matchmaking, singles, Solapur, SoulMateSolapur">
+    <meta name="author" content="Anand Manohar Utagikar">
+
+    <style>
+        /* Basic styles for body and html */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Custom Navbar Styles */
+        .navbar-custom {
+            background-image: url('your-background-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-color: #131313; /* Fallback color */
+            height: 80px;
+            padding: 0;
+        }
+
+        .navbar-custom .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-custom .nav-link {
+            color: #ddd;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #fff;
+        }
+
+        .navbar-custom .search-bar {
+            width: 300px;
+        }
+
+        .navbar-expand-lg {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-custom .navbar-brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        /* Parallax Effect Styles */
+        .parallax {
+            background-image: url('./images/Screenshot 2024-09-04 151556.png'); /* Replace with your image URL */
+            height: 80vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #faf8f8;
+            text-align: center;
+            margin: 20px;
+            border-radius: 15px;
+        }
+
+        .parallax h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .parallax p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .parallax .btn-primary {
+            font-size: 1.25rem;
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+        }
+
+        .parallax .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Review Section Styles */
+        .reviews-section {
+            background-color: #000;
+            padding: 60px 0;
+        }
+
+        .review-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-text {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .review-author {
+            font-size: 1rem;
+            color: #007bff;
+        }
+
+        .reviews-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #544c4c;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        footer p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        body{
+            background-color: #000;
+        }
+
+        footer a {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: #fff;
+            margin: 0 15px;
+        }
+
+        /* Additional responsiveness for navbar collapse */
+        .navbar-toggler-icon {
+            background-color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+
+        /* Styles for the collapsible menu */
+        .navbar-collapse {
+            background-color: #000; /* Background color for dropdown menu */
+            padding: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">
+        <img src="./images/dating-app (1).png" alt="Brand Icon"> SoulMateSolapur
+    </a>
+    <!-- Toggler for Mobile Menu -->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">&#9776;</span>
+    </button>
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./matches.html">Matches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./messages.html">Messages</a>
+            </li>
+            <!-- New ChitChat Solapur Section -->
+            <li class="nav-item">
+                <a class="nav-link" href="./chitchat.html">ChitChat Solapur</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<!-- Hero Section with Parallax Effect -->
+<div class="parallax">
+    <div style="text-align: center; padding: 20px;">
+        <h1>Find Your Perfect Match</h1>
+        <p>Join SoulMateSolapur and connect with singles in your city.</p>
+        <a href="./getstarted.html" class="btn btn-primary">Get Started</a>
+    </div>
+</div>
+
+<!-- Review Section -->
+<section class="reviews-section">
+    <div class="container">
+        <h2 class="text-center mb-4">What Our Users Say</h2>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="review-card p-4 rounded">
+                    <img src="./images/boy 1.avif" alt="User 1" class="img-fluid rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                    <h4 class="font-weight-bold">Alex Johnson</h4>
+                    <p class="font-weight-bold">"SoulMateSolapur is the best dating app I've ever used. I found my perfect match within weeks!"</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="review-card p-4 rounded">
+                    <img src="./images/boy img 2.avif" alt="User 2" class="img-fluid rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                    <h4 class="font-weight-bold">Jessica Smith</h4>
+                    <p class="font-weight-bold">"The app's features are fantastic, and I love the user-friendly interface. Highly recommend!"</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="review-card p-4 rounded">
+                    <img src="./images/girl img 1.avif" alt="User 3" class="img-fluid rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
+                    <h4 class="font-weight-bold">Michael Brown</h4>
+                    <p class="font-weight-bold">"Great app with a lot of genuine profiles. I had a great experience and made some amazing connections."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>© 2024 SoulMateSolapur. All rights reserved.</p>
+        <p>
+            <a href="./privacy.html">Privacy Policy</a> | 
+            <a href="./terms.html">Terms of Service</a>
+        </p>
+        <p>
+            Follow us: 
+            <a href="#" class="text-light">Facebook</a> | 
+            <a href="#" class="text-light">Twitter</a> | 
+            <a href="#" class="text-light">Instagram</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

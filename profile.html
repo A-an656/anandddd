@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SoulMateSolapur</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212; /* Dark background color for the body */
+            color: #e0e0e0; /* Light gray text color for better contrast */
+        }
+        .navbar-custom {
+            background-color: #1e1e1e;
+        }
+        .navbar-custom .navbar-brand, .navbar-custom .nav-link {
+            color: #e0e0e0;
+        }
+        .profile-header {
+            background-color: #1e1e1e;
+            border-bottom: 2px solid #333;
+            padding: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+        .profile-header h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+        .profile-header p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+        .matches-section, .posts-section {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .matches-section h2, .posts-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+        }
+        .match-card, .post-card {
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        .match-card img, .post-card img {
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+        }
+        .match-card h4, .post-card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+        .match-card p, .post-card p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+        .profile-footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #333;
+        }
+        .profile-footer p {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="#">
+            <img src="./images/dating-app (1).png" alt="Brand Icon" style="height: 30px;"> SoulMateSolapur
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target
+        ="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="matches.html">Matches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="messages.html">Messages</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="profile.html">Profile <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./chitchat.html">ChitChat Solapur</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Profile Header -->
+<div class="container profile-header text-center">
+    <img src="./images/g 3.jpg" alt="Profile Picture">
+    <h1>John Doe</h1>
+    <p>25 years old | Solapur | Software Developer</p>
+</div>
+
+<!-- Matches Section -->
+<div class="container matches-section">
+    <h2>My Matches</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="match-card">
+                <img src="./images/b 3.jpg" alt="Match 1">
+                <h4>Alice Smith</h4>
+                <p>25 years old | Solapur</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="match-card">
+                <img src="./images/b 2.jpg" alt="Match 2">
+                <h4>Bob Johnson</h4>
+                <p>28 years old | Solapur</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="match-card">
+                <img src="./images/g 1.jpg" alt="Match 3">
+                <h4>Claire Brown</h4>
+                <p>22 years old | Solapur</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Posts Section -->
+<div class="container posts-section">
+    <h2>My Posts</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="post-card">
+                <img src="./images/g 2.jpg" alt="Post 1">
+                <h4>Exploring Solapur</h4>
+                <p>Had an amazing day exploring the sights and sounds of Solapur!</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post-card">
+                <img src="./images/g 3.jpg" alt="Post 2">
+                <h4>Coffee with Friends</h4>
+                <p>Enjoyed a great coffee with some amazing friends at our favorite cafe.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="post-card">
+                <img src="./images/g 4.jpg" alt="Post 3">
+                <h4>Weekend Getaway</h4>
+                <p>Just got back from a relaxing weekend getaway. Feeling refreshed!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="profile-footer">
+    <p>© 2024 SoulMateSolapur. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
